@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>ADMIN</h2>
+
+        <ul>
+            <li class="active"><i class="fa fa-grid"></i> Dashboard</li>
+            <li><i class="fa fa-users"></i> Users</li>
+            <li><i class="fa fa-chart-line"></i> Reports</li>
+            <li><i class="fa fa-gear"></i> Settings</li>
+            <li><i class="fa fa-right-from-bracket"></i> Logout</li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <div class="header">
+
+            <h1>Admin Dashboard</h1>
+
+            <div class="header-right">
+
+                <input type="text" id="search" placeholder="Search...">
+
+                <div id="clock"></div>
+
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+
+                <button id="themeBtn">
+                    <i class="fa fa-moon"></i>
+                </button>
+
+                <div class="profile">
+                    <i class="fa fa-user-circle"></i> Admin
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa fa-users"></i>
+                <h3>Total Users</h3>
+                <p class="count" data-target="900">0</p>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-indian-rupee-sign"></i>
+                <h3>Revenue</h3>
+                <p class="count" data-target="80000">0</p>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-cart-shopping"></i>
+                <h3>Orders</h3>
+                <p class="count" data-target="420">0</p>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-box"></i>
+                <h3>Products</h3>
+                <p class="count" data-target="150">0</p>
+            </div>
+
+        </div>
+
+        <div class="chart-box">
+            <h2>Monthly Users</h2>
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="table-box">
+
+            <h2>Recent Orders</h2>
+
+            <table>
+
+                <tr>
+                    <th>ID</th>
+                    <th>User</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>#1001</td>
+                    <td>Rahul</td>
+                    <td class="complete">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>#1002</td>
+                    <td>Priya</td>
+                    <td class="pending">Pending</td>
+                </tr>
+
+                <tr>
+                    <td>#1003</td>
+                    <td>Aman</td>
+                    <td class="complete">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>#1004</td>
+                    <td>Neha</td>
+                    <td class="pending">Pending</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
